@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+    <style>
+        body{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+    }
+    button{
+        margin: 10px;
+        padding: 10px;
+        background-color: skyblue;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+        color: white;
+    }
+    #nav{
+        
+        display: flex;
+        justify-content:space-between;
+        padding: 20px;
+        background-color: skyblue;
+
+    }
+    #nav > div > a{
+        text-decoration: none;
+        margin: 5px;
+        padding: 10px;
+        color: white;
+
+    }
+
+    .logo{
+        font: 30px bold;
+        color: white;
+    }
+    h1{
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <div id="nav">
+        <div><span class="logo">API</span></div>
+        <div>
+            <a href="index.html">User</a>
+            <a href="post.html">Posts</a>
+            <a href="comments.html">Comments</a>
+            <a href="photos.html">Photos</a>
+            <a href="album.html">Albums</a>
+        </div>
+
+    </div>
+    </nav>
+    <h1>Hello API </h1>
+    <ul id="user"></ul>
+    <button onclick="loadData()">Load API</button>
+    <button onclick="loadUser()">User API Load</button>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
